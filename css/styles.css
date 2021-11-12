@@ -18,13 +18,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #3AAA64;
+  color: #008834;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #2d844e;
+  color: #00a2b8;
 }
 
 a:focus {
@@ -214,6 +214,15 @@ a.dotted-link:hover {
   border-radius: 10px;
   background-color: #3893bd;
   margin-top: 15px;
+  display: block;
+}
+
+.proyecto .proyecto_presentacion {
+  display: flex;
+}
+
+.proyecto .proyecto_repositorio {
+  margin-top: 5px;
   display: flex;
 }
 
