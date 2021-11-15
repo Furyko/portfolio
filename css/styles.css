@@ -230,6 +230,31 @@ a.dotted-link:hover {
   color: #383838;
 }
 
+/* Contact Form
+
+.form .form_field{
+  display: block;
+  width: 100%;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+}
+
+.send_email_button {
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  transition: all 0.1s linear;
+  background-color: #e7e7e7;
+}
+
+.send_email_button:hover {
+  background-color: #008834;
+}
+*/
+
 /* About Section */
 .latest .item {
   margin-bottom: 30px;
