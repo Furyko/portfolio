@@ -188,6 +188,10 @@ a.dotted-link:hover {
   margin-bottom: 10px;
 }
 
+.sub_info {
+  color: rgb(78, 78, 78);
+}
+
 /* Projects Section*/
 
 .diapositivas_heading {
@@ -205,14 +209,10 @@ a.dotted-link:hover {
   object-fit: cover;
 }
 
-/*.proyecto {
-  padding: 10px;
-}*/
-
 .proyecto {
   padding: 10px;
   border-radius: 10px;
-  background-color: #3893bd;
+  background-color: #a7a7a7;
   margin-top: 15px;
   display: block;
 }
@@ -229,31 +229,6 @@ a.dotted-link:hover {
 .r_placeholder {
   color: #383838;
 }
-
-/* Contact Form
-
-.form .form_field{
-  display: block;
-  width: 100%;
-}
-
-textarea {
-  min-height: 100px;
-  max-height: 200px;
-}
-
-.send_email_button {
-  width: 100%;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  transition: all 0.1s linear;
-  background-color: #e7e7e7;
-}
-
-.send_email_button:hover {
-  background-color: #008834;
-}
-*/
 
 /* About Section */
 .latest .item {
