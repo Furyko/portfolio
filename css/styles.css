@@ -219,6 +219,7 @@ a.dotted-link:hover {
 
 .proyecto .proyecto_presentacion {
   display: flex;
+  margin: 4px;
 }
 
 .proyecto .proyecto_repositorio {
