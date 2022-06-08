@@ -23,6 +23,22 @@ p {
     border-color: #CCEBF1;
 }
 
+.btn-credential:hover {
+    color: #000000;
+    background-color: #b7d2d8;
+    border-color: #CCEBF1;
+}
+
+.btn-info {
+    color: #FFFF;
+    background-color: #0dcaf0;
+}
+
+.btn-info:hover {
+    color: #FFFF;
+    background-color: #0cb2d3;
+}
+
 footer {
     display: block;
 }
