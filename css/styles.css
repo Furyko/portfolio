@@ -6,9 +6,18 @@ p {
     margin-bottom: 0rem;;
 }
 
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .info-title {
-    margin-bottom: 1rem;
     transition-duration: 0.5s;
+}
+
+.info-title ul {
+    margin-bottom: 0;
 }
 
 .project {
