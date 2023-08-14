@@ -6,6 +6,55 @@ p {
     margin-bottom: 0rem;;
 }
 
+.caroussel-container {
+    height: 20rem;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1199px) {
+    .caroussel-container {
+        height: 265px;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .caroussel-container {
+        height: 300px;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .caroussel-container {
+        height: 215px;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 532px) {
+    .caroussel-container {
+        height: 160px;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .caroussel-container {
+        height: 160px;
+        overflow: hidden;
+    }
+
+    .caroussel-container .carousel-item{
+        height: 100%;
+    }
+
+    .caroussel-container .carousel-item img{
+        height: 100%;
+        width: auto;
+    }
+}
+
 .info-container {
     display: flex;
     flex-direction: column;
