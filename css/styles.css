@@ -75,6 +75,18 @@ p {
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
 }
 
+
+.project-img {
+    transition-duration: 0.5s;
+    transition-property: scale, box-shadow;
+    transition-timing-function: ease-out;
+}
+
+.project-img:hover {
+    scale: 1.1;
+    box-shadow: 0 0 10px black;
+}
+
 .btn-credential {
     color: #000000;
     background-color: #CCEBF1;
