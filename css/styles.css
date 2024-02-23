@@ -1,5 +1,13 @@
 body {
-    background-color: #CCEBF1;
+    background-color: var(--color-1);
+}
+
+:root {
+    --color-1: #CCEBF1;
+    --color-2: #DAF3F8;
+    --color-3: #EEFCFF;
+    --color-4: #FFFFFF;
+    --color-5: #000000;
 }
 
 p {
@@ -80,7 +88,7 @@ p {
 }
 
 .project {
-    background-color: #EEFCFF;
+    background-color: var(--color-3);
     border-radius: 0.25rem;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
 }
@@ -98,15 +106,15 @@ p {
 }
 
 .btn-credential {
-    color: #000000;
-    background-color: #CCEBF1;
-    border-color: #CCEBF1;
+    color: var(--color-5);
+    background-color: var(--color-1);
+    border-color: var(--color-1);
 }
 
 .btn-credential:hover {
-    color: #000000;
+    color: var(--color-5);
     background-color: #b7d2d8;
-    border-color: #CCEBF1;
+    border-color: var(--color-1);
 }
 
 .btn-info {
@@ -124,8 +132,8 @@ footer {
 }
 
 .footer {
-    background-color: #DAF3F8;
+    background-color: var(--color-2);
     text-align: center;
     padding: 2rem;
-    color: #000000;
+    color: var(--color-5);
 }
