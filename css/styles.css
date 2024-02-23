@@ -2,7 +2,7 @@ body {
     background-color: var(--color-1);
 }
 
-body, .card, .navbar, .footer, .project {
+body, .card, .navbar, .footer, .project, .switch {
     transition-duration: 0.3s;
     transition-property: background-color;
     transition-timing-function: ease-out;
@@ -39,7 +39,7 @@ p {
 }
 
 .switch {
-    background: #34305B;
+    background-color: #34305B;
     border-radius: 1000px;
     border: none;
     position: relative;
@@ -62,9 +62,10 @@ p {
     background: #F1F1F1;
     top: 0;
     left: 0;
-    right: unset;
     border-radius: 100px;
     box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+    transition: all 0.3s ease;
+
 }
 
 .switch.active {
@@ -73,8 +74,7 @@ p {
 }
 
 .switch.active::after {
-    right: 0;
-    left: unset;
+    transform: translate(100%, 0);
 }
 
 .switch span {
