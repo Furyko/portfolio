@@ -55,6 +55,16 @@ p {
     }
 }
 
+.project-img-carousel {
+    transition-duration: 0.3s;
+    transition-property: scale;
+    transition-timing-function: ease-out;
+}
+
+.project-img-carousel:hover {
+    scale: 1.1;
+}
+
 .info-container {
     display: flex;
     flex-direction: column;
