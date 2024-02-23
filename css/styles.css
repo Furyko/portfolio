@@ -94,7 +94,7 @@ p {
 
 .project-img:hover {
     scale: 1.05;
-    box-shadow: 0 0 8px black;
+    box-shadow: 0 0 8px #858585;
 }
 
 .btn-credential {
