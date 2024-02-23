@@ -10,8 +10,73 @@ body {
     --color-5: #000000;
 }
 
+:root.dark-mode {
+    --color-1: #000000;
+    --color-2: #3282B8;
+    --color-3: rgb(51, 57, 63);
+    --color-4: #BBE1FA;
+    --color-5: #000000;
+}
+
 p {
     margin-bottom: 0rem;;
+}
+
+.lighted-text {
+    color: #CCEBF1;
+}
+
+.switch {
+    background: #34305B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    height: min-content;
+    width: 3.7rem;
+}
+
+.switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+}
+
+.switch.active {
+    background: #FFF;
+    color: #333;
+}
+
+.switch.active::after {
+    right: 0;
+    left: unset;
+}
+
+.switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+}
+
+.switch.active span {
+    color: #333;
 }
 
 .caroussel-container {
@@ -107,14 +172,14 @@ p {
 
 .btn-credential {
     color: var(--color-5);
-    background-color: var(--color-1);
-    border-color: var(--color-1);
+    background-color: var(--color-2);
+    border-color: var(--color-2);
 }
 
 .btn-credential:hover {
     color: var(--color-5);
     background-color: #b7d2d8;
-    border-color: var(--color-1);
+    border-color: var(--color-2);
 }
 
 .btn-info {
