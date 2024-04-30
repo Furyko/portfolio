@@ -73,7 +73,7 @@ contactForm.addEventListener('submit', (e) => {
     e.preventDefault()
     const body = Object.fromEntries(new FormData(e.target))
 
-    postData('http://localhost:80/api/sendmail', body)
+    postData('https://jp-portfolio-backend.vercel.app/api/sendmail', body)
     .then(data => {
         console.log("data: ",data);
         const correctMsg = "Tu correo se ha enviado correctamente. Me contactaré contigo lo antes posible 😉."
