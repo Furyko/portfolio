@@ -39,3 +39,31 @@ switchButton.addEventListener('click', (e) => {
     navbar.classList.toggle('navbar-dark')
     navbar.classList.toggle('bg-dark')
 })
+
+async function postData(url = '', data = {}) {
+    const response = await fetch(url, {
+      method: 'POST',
+      mode: 'cors',
+      cache: 'no-cache',
+      credentials: 'same-origin',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      redirect: 'follow',
+      referrerPolicy: 'no-referrer',
+      body: JSON.stringify(data) 
+    });
+    return response.json();
+  }
+
+const contactForm = document.getElementById('contact-form')
+
+contactForm.addEventListener('submit', (e) => {
+    e.preventDefault()
+    const body = Object.fromEntries(new FormData(e.target))
+
+    postData('http://localhost:80/api/sendmail', body)
+    .then(data => {
+        console.log(data);
+    });
+})

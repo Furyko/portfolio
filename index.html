@@ -157,11 +157,53 @@
                   </div>
                   <div class="info-title" id="contactar">
                     <h4 class="title">Contacto</h4>
-                    <ul>
+                    <ul class="mb-2">
                       <li>Correo: <a href="mailto:pedrojulianpalavecino@gmail.com">pedrojulianpalavecino@gmail.com</a></li>
                       <li>LinkedIn: <a href="https://www.linkedin.com/in/julian-palavecino/" target="_blank">Julian Palavecino</a></li>
                       <li>GitHub: <a href="https://github.com/Furyko" target="_blank">Furyko</a></li>
                     </ul>
+                    <form id="contact-form">
+                      <div class="mb-3">
+                        <input 
+                          name="name" 
+                          type="text" 
+                          placeholder="Nombre"
+                          class="form-control" 
+                          >
+                      </div>
+
+                      <div class="mb-3">
+                        <input 
+                          name="email" 
+                          type="email" 
+                          placeholder="*Email"
+                          class="form-control" 
+                          required>
+                      </div>
+
+                      <div class="mb-3">
+                        <input 
+                          name="subject" 
+                          type="text" 
+                          placeholder="Asunto"
+                          class="form-control">
+                      </div>
+
+                      <div class="mb-3">
+                        <textarea
+                          name="text"
+                          cols="44"
+                          rows="6"
+                          placeholder="*Escribe tu mensaje..."
+                          class="form-control"
+                          required
+                        ></textarea>
+                      </div>
+                        
+                      <button type="submit" class="btn btn-primary">
+                        Enviar mensaje
+                      </button>
+                    </form>
                   </div>
                 </div>
               </div>
