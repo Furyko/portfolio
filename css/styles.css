@@ -115,6 +115,11 @@ p {
         height: 215px;
         overflow: hidden;
     }
+
+    .project-info {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 
 @media only screen and (max-width: 532px) {
