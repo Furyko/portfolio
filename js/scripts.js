@@ -83,7 +83,7 @@ contactForm.addEventListener('submit', (e) => {
     .catch(error => {
         console.log("eror: ",error);
         const errorMsg = "Ocurrió un error al enviar el formulario 😱. Prueba en unos minutos, por favor. O también puedes enviarme tu mensaje a pedrojulianpalavecino@gmail.com 😉."
-        setModalText("Hubo un error", errorMsg)
+        setModalText("Ocurrió un error", errorMsg)
         bootstrapModal.show();
     });
 })
