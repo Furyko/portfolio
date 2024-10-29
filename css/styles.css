@@ -152,6 +152,7 @@ p {
 }
 
 .project-img-carousel {
+    object-fit: cover;
     transition-duration: 0.3s;
     transition-property: scale;
     transition-timing-function: ease-out;
