@@ -8,6 +8,14 @@ body, .card, .navbar, .footer, .project, .switch {
     transition-timing-function: ease-out;
 }
 
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
 h1, h2, h3, h4, h5, h6, span, p, .info-title {
     transition-duration: 0.3s;
     transition-property: color;
