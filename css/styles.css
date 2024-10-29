@@ -14,12 +14,17 @@ h1, h2, h3, h4, h5, h6, span, p, .info-title {
     transition-timing-function: ease-out;
 }
 
+a {
+    text-decoration: none;
+}
+
 :root {
     --color-1: #CCEBF1;
     --color-2: #DAF3F8;
     --color-3: #EEFCFF;
     --color-4: #FFFFFF;
     --color-5: #000000;
+    --technology-badge: var(--bs-primary);
 }
 
 :root.dark-mode {
@@ -28,6 +33,7 @@ h1, h2, h3, h4, h5, h6, span, p, .info-title {
     --color-3: rgb(51, 57, 63);
     --color-4: #BBE1FA;
     --color-5: #000000;
+    --technology-badge: var(--bs-info);
 }
 
 p {
@@ -202,6 +208,11 @@ p {
 .btn-info:hover {
     color: #FFFF;
     background-color: #0cb2d3;
+}
+
+.tech-name {
+    color: var(--technology-badge);
+    padding-left: 0;
 }
 
 footer {
