@@ -60,6 +60,7 @@ const modal = document.getElementById("emailResultModal")
 const bootstrapModal = new bootstrap.Modal(modal, {});
 
 const contactForm = document.getElementById('contact-form')
+const submitEmailBtn = document.getElementById('submit-email-button')
 
 function setModalText(title, bodyText) {
     const modalTitle = document.querySelector('#emailResultModal .modal-title');
@@ -69,9 +70,25 @@ function setModalText(title, bodyText) {
     modalBody.textContent = bodyText
 }
 
+function setSubmitBtnLoading(isLoading) {
+    if (isLoading) {
+        submitEmailBtn.innerHTML = `
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span class="visually-hidden">Loading...</span>
+        `;
+        submitEmailBtn.disabled = true;
+    } else {
+        submitEmailBtn.innerHTML = `
+            Enviar mensaje
+        `;
+        submitEmailBtn.disabled = false;
+    }
+}
+
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault()
     const body = Object.fromEntries(new FormData(e.target))
+    setSubmitBtnLoading(true)
 
     postData('https://jp-portfolio-backend.vercel.app/api/sendmail', body)
     .then(data => {
@@ -79,11 +96,13 @@ contactForm.addEventListener('submit', (e) => {
         const correctMsg = "Tu correo se ha enviado correctamente. Me contactaré contigo lo antes posible 😉."
         setModalText("¡Muchas gracias por contactarme!", correctMsg)
         bootstrapModal.show();
+        setSubmitBtnLoading(false);
     })
     .catch(error => {
         console.log("eror: ",error);
         const errorMsg = "Ocurrió un error al enviar el formulario 😱. Prueba en unos minutos, por favor. O también puedes enviarme tu mensaje a pedrojulianpalavecino@gmail.com 😉."
         setModalText("Ocurrió un error", errorMsg)
         bootstrapModal.show();
+        setSubmitBtnLoading(false);
     });
 })
