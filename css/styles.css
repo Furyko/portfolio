@@ -48,6 +48,27 @@ p {
     margin-bottom: 0rem;
 }
 
+.transition-visible, .transition-invisible {
+    transition-duration: 0.6s;
+    transition-property: opacity, transform;
+    transition-timing-function: ease-in-out;
+}
+
+.transition-visible {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.transition-invisible-left {
+    opacity: 0;
+    transform: translateX(-60px);
+}
+
+.transition-invisible-right {
+    opacity: 0;
+    transform: translateY(60px);
+}
+
 .lighted-text {
     color: #CCEBF1;
 }
@@ -121,6 +142,16 @@ p {
     .caroussel-container {
         height: 300px;
         overflow: hidden;
+    }
+
+    .transition-invisible-left {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    
+    .transition-invisible-right {
+        opacity: 0;
+        transform: translateY(60px);
     }
 }
 
