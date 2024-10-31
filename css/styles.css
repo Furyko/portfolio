@@ -1,3 +1,31 @@
+:root {
+    --color-1: #CCEBF1;
+    --color-2: #DAF3F8;
+    --color-3: #EEFCFF;
+    --color-4: #FFFFFF;
+    --color-5: #000000;
+    --technology-badge: var(--bs-primary);
+}
+
+:root.dark-mode {
+    --color-1: #000000;
+    --color-2: #3282B8;
+    --color-3: rgb(51, 57, 63);
+    --color-4: #BBE1FA;
+    --color-5: #000000;
+    --technology-badge: var(--bs-info);
+}
+
+:root.lang-spanish {
+    --display-spanish: auto;
+    --display-english: none;
+}
+
+:root.lang-english {
+    --display-spanish: none;
+    --display-english: auto;
+}
+
 body {
     background-color: var(--color-1);
 }
@@ -26,26 +54,16 @@ a {
     text-decoration: none;
 }
 
-:root {
-    --color-1: #CCEBF1;
-    --color-2: #DAF3F8;
-    --color-3: #EEFCFF;
-    --color-4: #FFFFFF;
-    --color-5: #000000;
-    --technology-badge: var(--bs-primary);
-}
-
-:root.dark-mode {
-    --color-1: #000000;
-    --color-2: #3282B8;
-    --color-3: rgb(51, 57, 63);
-    --color-4: #BBE1FA;
-    --color-5: #000000;
-    --technology-badge: var(--bs-info);
-}
-
 p {
     margin-bottom: 0rem;
+}
+
+.spanish {
+    display: var(--display-spanish);
+}
+
+.english {
+    display: var(--display-english);
 }
 
 .transition-visible, .transition-invisible {

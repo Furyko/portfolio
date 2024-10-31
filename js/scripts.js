@@ -25,6 +25,15 @@ function resetTextColor(href) {
     text.classList.toggle('lighted-text')
 }
 
+/* Language */
+document.getElementById('spanish-button').addEventListener('click', (e) => {
+    document.documentElement.classList.replace('lang-english', 'lang-spanish')
+})
+
+document.getElementById('english-button').addEventListener('click', (e) => {
+    document.documentElement.classList.replace('lang-spanish', 'lang-english')
+})
+
 const switchButton = document.getElementById("switch-btn")
 
 switchButton.addEventListener('click', (e) => {
