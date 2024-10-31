@@ -106,13 +106,3 @@ contactForm.addEventListener('submit', (e) => {
         setSubmitBtnLoading(false);
     });
 })
-
-const transitionsLeft = document.querySelectorAll('.transition-invisible-left')
-transitionsLeft.forEach(element => {
-    element.classList.replace('transition-invisible-left', 'transition-visible')
-})
-
-const transitionsRight = document.querySelectorAll('.transition-invisible-right')
-transitionsRight.forEach(element => {
-    element.classList.replace('transition-invisible-right', 'transition-visible')
-})
