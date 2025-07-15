@@ -16,16 +16,6 @@
     --technology-badge: var(--bs-info);
 }
 
-:root.lang-spanish {
-    --display-spanish: auto;
-    --display-english: none;
-}
-
-:root.lang-english {
-    --display-spanish: none;
-    --display-english: auto;
-}
-
 body {
     background-color: var(--color-1);
 }
@@ -56,14 +46,6 @@ a {
 
 p {
     margin-bottom: 0rem;
-}
-
-.spanish {
-    display: var(--display-spanish);
-}
-
-.english {
-    display: var(--display-english);
 }
 
 .transition-visible, .transition-invisible {

@@ -26,13 +26,59 @@ function resetTextColor(href) {
 }
 
 /* Language */
+
+const spanish = {
+        "about-title": "Sobre mí",
+        "profile-profession": "Desarrollador Frontend",
+        "navbarDropdownMenuAbout": "Sobre mí",
+        "dropdown-about-presentation": "Presentación",
+        "dropdown-about-studies": "Estudios",
+        "dropdown-about-knowledge": "Conocimientos",
+        "dropdown-about-experience": "Experiencia",
+        "dropdown-about-english": "Nivel de inglés",
+        "dropdown-about-contact": "Contacto",
+        "navbarDropdownMenuProjects": "Mis proyectos",
+        "dropdown-projects-repos": "Mis repositorios",
+        "dropdown-projects-portfolio-repo": "Repositorio de este portfolio",
+        "nav-contact": "Contáctame",
+    }
+
+const english =
+    {
+        "about-title": "About",
+        "profile-profession": "Frontend Developer",
+        "navbarDropdownMenuAbout": "About",
+        "dropdown-about-presentation": "Presentation",
+        "dropdown-about-studies": "Studies",
+        "dropdown-about-knowledge": "Knowledge",
+        "dropdown-about-experience": "Experience",
+        "dropdown-about-english": "English Level",
+        "dropdown-about-contact": "Contact",
+        "navbarDropdownMenuProjects": "My projects",
+        "dropdown-projects-repos": "My repositories",
+        "dropdown-projects-portfolio-repo": "Repository of this portfolio",
+        "nav-contact": "Contact me",
+    }
+
 document.getElementById('spanish-button').addEventListener('click', (e) => {
-    document.documentElement.classList.replace('lang-english', 'lang-spanish')
+    document.getElementById("spanish-flag").classList.toggle('d-none')
+    document.getElementById("english-flag").classList.toggle('d-none')
+    for (let key in spanish) {
+        console.log(`${key}`)
+        document.getElementById(key).innerHTML = spanish[key]
+    }
 })
 
 document.getElementById('english-button').addEventListener('click', (e) => {
-    document.documentElement.classList.replace('lang-spanish', 'lang-english')
+    document.getElementById("spanish-flag").classList.toggle('d-none')
+    document.getElementById("english-flag").classList.toggle('d-none')
+    for (let key in english) {
+        console.log(`${key}`)
+        document.getElementById(key).innerHTML = english[key]
+    }
 })
+
+/* /Language/ */
 
 const switchButton = document.getElementById("switch-btn")
 
