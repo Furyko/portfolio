@@ -61,8 +61,10 @@ const english =
     }
 
 document.getElementById('spanish-button').addEventListener('click', (e) => {
-    document.getElementById("spanish-flag").classList.toggle('d-none')
-    document.getElementById("english-flag").classList.toggle('d-none')
+    if (!document.getElementById("english-flag").classList.contains('d-none')) {
+        document.getElementById("english-flag").classList.add('d-none')
+    }
+    document.getElementById("spanish-flag").classList.remove('d-none')
     for (let key in spanish) {
         console.log(`${key}`)
         document.getElementById(key).innerHTML = spanish[key]
@@ -70,8 +72,10 @@ document.getElementById('spanish-button').addEventListener('click', (e) => {
 })
 
 document.getElementById('english-button').addEventListener('click', (e) => {
-    document.getElementById("spanish-flag").classList.toggle('d-none')
-    document.getElementById("english-flag").classList.toggle('d-none')
+    document.getElementById("english-flag").classList.remove('d-none')
+    if (!document.getElementById("spanish-flag").classList.contains('d-none')) {
+        document.getElementById("spanish-flag").classList.add('d-none')
+    }
     for (let key in english) {
         console.log(`${key}`)
         document.getElementById(key).innerHTML = english[key]
