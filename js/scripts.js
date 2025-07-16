@@ -143,6 +143,8 @@ switchButton.addEventListener('click', (e) => {
     const navbar = document.querySelector('nav')
     navbar.classList.toggle('navbar-dark')
     navbar.classList.toggle('bg-dark')
+    const langSwitch = document.getElementById('dropdownMenuLang')
+    langSwitch.classList.toggle('text-light')
 })
 
 async function postData(url = '', data = {}) {
