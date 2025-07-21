@@ -1,6 +1,6 @@
 # Mi portfolio
 
-<img src="https://julian-palavecino.netlify.app/images/portfolio.png" alt="No se ha podido cargar la imagen" width="675rem"/>
+<img src="https://julian-palavecino.netlify.app/images/portfolio.jpg" alt="No se ha podido cargar la imagen" width="675rem"/>
 
 
 ## Tecnologías utlizadas
